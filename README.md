@@ -10,7 +10,8 @@ to a custom image processing accelerator. All kernels are dispatched according t
 ## Prerequisites
 
 * Vivado (tested with 2017.2)
-* all prerequisites of [Tapasco](https://github.com/HSA-on-FPGA/Tapasco)
+* All prerequisites of [Tapasco](https://github.com/HSA-on-FPGA/Tapasco)
+* Installation of [png++](https://www.nongnu.org/pngpp/) for the host program
 
 ## Install
 
@@ -21,7 +22,7 @@ to a custom image processing accelerator. All kernels are dispatched according t
 
 ## setup image processing test case
 
-* compile the x86 host programm with `make software`
+* compile the x86 host program with `make software`
 * create the FPGA bitstream with `make hardware`
 
 ## running a test case
