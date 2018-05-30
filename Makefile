@@ -21,7 +21,7 @@ build_backend:
 		$(MAKE) -C $$dir; \
 	done
 
-bitstream:
+bitstream: build_backend
 	export TAPASCO_HOME=$(TAPASCO_DIR) \
 	&& export PATH=$$TAPASCO_HOME/bin:$$PATH \
 	&& export FAU_HOME=$(CURRENT_DIR) \
