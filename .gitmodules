@@ -1,0 +1,9 @@
+[submodule "LibHSA"]
+	path = LibHSA
+	url = https://github.com/HSA-on-FPGA/LibHSA
+[submodule "image_accelerator/HSA-Accelerator"]
+	path = image_accelerator/HSA-Accelerator
+	url = https://github.com/HSA-on-FPGA/HSA-Accelerator
+[submodule "Tapasco"]
+	path = Tapasco
+	url = https://github.com/HSA-on-FPGA/Tapasco

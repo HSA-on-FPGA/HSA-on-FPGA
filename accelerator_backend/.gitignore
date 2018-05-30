@@ -1,0 +1,4 @@
+build/
+.Xil/
+vivado*.log
+vivado*.jou

@@ -1,0 +1,5 @@
+build_design/
+build_sim/
+.Xil/
+vivado*.log
+vivado*.jou
