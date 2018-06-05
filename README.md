@@ -2,8 +2,8 @@
 
 Main repository of the HSA-on-FPGA demonstrator project. The design uses the
 [LibHSA](https://github.com/HSA-on-FPGA/LibHSA) library described by
-[Reichenbach et al.](https://ieeexplore.ieee.org/document/8122108/) to connect
-an x86 host CPU via [David de la Chevallerie's PCIe interface](https://dl.acm.org/citation.cfm?id=2927971)
+[Reichenbach et al.](https://link.springer.com/article/10.1007/s11265-018-1382-7) to connect
+an x86 host CPU via [David de la Chevallerie et al.'s PCIe interface](https://dl.acm.org/citation.cfm?id=2927971)
 to a custom image processing accelerator. All kernels are dispatched according to the
 [HSA Foundation standards](http://www.hsafoundation.com/).
 
@@ -12,6 +12,12 @@ to a custom image processing accelerator. All kernels are dispatched according t
 * Vivado (tested with 2017.2)
 * All prerequisites of [Tapasco](https://github.com/HSA-on-FPGA/Tapasco)
 * Installation of [png++](https://www.nongnu.org/pngpp/) for the host program
+
+## Tested Hardware
+
+* Xilinx Virtex-7 VC709 FPGA
+* AMD Carrizo APU
+* Intel Haswell CPU
 
 ## Install
 
