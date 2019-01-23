@@ -6,5 +6,5 @@
 	url = https://github.com/HSA-on-FPGA/HSA-Accelerator
 [submodule "Tapasco"]
 	path = Tapasco
-	url = https://git.esa.informatik.tu-darmstadt.de/tapasco/tapasco
+	url = https://git.esa.informatik.tu-darmstadt.de/tapasco/tapasco.git
 	branch = HSA
