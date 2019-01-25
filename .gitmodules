@@ -7,4 +7,5 @@
 [submodule "Tapasco"]
 	path = Tapasco
 	url = https://git.esa.informatik.tu-darmstadt.de/tapasco/tapasco.git
-	branch = HSA
+    branch = master
+    ignore = dirty
