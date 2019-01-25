@@ -3,7 +3,11 @@ SHELL := /bin/bash
 MKFILE_PATH := $(abspath $(lastword $(MAKEFILE_LIST)))
 CURRENT_DIR := $(dir $(MKFILE_PATH))
 
+EMPTY :=
+SPACE := $(EMPTY) $(EMPTY)
+
 BACKEND_DIRS = LibHSA/ accelerator_backend/ image_accelerator/
+BACKEND_DIRS_HOME = $(subst $(SPACE),:,$(addprefix $(PWD)/, $(BACKEND_DIRS)))
 MIPS_DESIGN_DIR = mips_board_design/
 TAPASCO_DIR = $(abspath $(CURRENT_DIR)Tapasco)
 
@@ -22,10 +26,10 @@ build_backend:
 
 bitstream: build_backend
 	source $(TAPASCO_DIR)/setup.sh \
-	&& export FAU_HOME=$(CURRENT_DIR) \
+	&& export FAU_HOME=$(BACKEND_DIRS_HOME) \
 	&& tapasco hls counter -p vc709 \
 	&& tapasco compose '[ counter x 1]' @ 100MHz -p vc709 --features 'HSA (enabled = true)' \
-	&& cp $(TAPASCO_DIR)/bd/axi4mm/vc709/counter/002/100.0+BlueDMA+HSA/axi4mm-vc709--counter_2--100.0.bit vc709_bitstream.bit
+	&& cp $(TAPASCO_DIR)/bd/axi4mm/vc709/counter/001/100.0+HSA/axi4mm-vc709--counter_1--100.0.bit vc709_bitstream.bit
 
 setup_tapasco:
 	source $(TAPASCO_DIR)/setup.sh \
