@@ -9,13 +9,13 @@ to a custom image processing accelerator. All kernels are dispatched according t
 
 ## Prerequisites
 
-* Vivado (tested with 2017.2)
+* Vivado (tested with 2017.2 to 2018.3)
 * All prerequisites of [Tapasco](https://github.com/HSA-on-FPGA/Tapasco)
-* Installation of [png++](https://www.nongnu.org/pngpp/) for the host program
 
 ## Tested Hardware
 
 * Xilinx Virtex-7 VC709 FPGA
+* AMD Ryzen CPU
 * AMD Carrizo APU
 * Intel Haswell CPU
 
