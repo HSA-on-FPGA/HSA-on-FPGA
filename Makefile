@@ -7,7 +7,7 @@ EMPTY :=
 SPACE := $(EMPTY) $(EMPTY)
 
 BACKEND_DIRS = LibHSA/ accelerator_backend/ image_accelerator/
-BACKEND_DIRS_HOME = $(subst $(SPACE),:,$(addprefix $(PWD)/, $(BACKEND_DIRS)))
+BACKEND_DIRS_HOME = $(subst $(SPACE),:,$(addprefix $(CURRENT_DIR)/, $(BACKEND_DIRS)))
 MIPS_DESIGN_DIR = mips_board_design/
 TAPASCO_DIR = $(abspath $(CURRENT_DIR)Tapasco)
 
