@@ -10,7 +10,24 @@ to a custom image processing accelerator. All kernels are dispatched according t
 ## Prerequisites
 
 * Vivado (tested with 2017.2 to 2018.3)
-* All prerequisites of [Tapasco](https://github.com/HSA-on-FPGA/Tapasco)
+* GIT LFS for the compiler submodule https://git-lfs.github.com
+* TaPaSCo prerequisites:
+    - Ubuntu 16.04/18.04
+ ```bash
+apt-get -y update && apt-get -y install unzip git zip findutils curl build-essential linux-headers-generic python cmake libelf-dev libncurses-dev git rpm
+curl -s "https://get.sdkman.io" | bash
+source "/root/.sdkman/bin/sdkman-init.sh"
+sdk install java
+sdk install sbt
+ ```
+     - Fedora 27/28/29
+ ```bash
+dnf -y install which unzip git zip findutils kernel-devel make gcc gcc-c++ elfutils-libelf-devel cmake ncurses-devel python libatomic git rpm-build
+curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+sdk install java
+sdk install sbt
+ ```
 
 ## Tested Hardware
 
