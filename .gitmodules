@@ -1,9 +1,13 @@
 [submodule "LibHSA"]
 	path = LibHSA
-	url = https://github.com/HSA-on-FPGA/LibHSA
+    url = https://github.com/HSA-on-FPGA/LibHSA
+    ignore = dirty
 [submodule "image_accelerator/HSA-Accelerator"]
 	path = image_accelerator/HSA-Accelerator
-	url = https://github.com/HSA-on-FPGA/HSA-Accelerator
+    url = https://github.com/HSA-on-FPGA/HSA-Accelerator
+    ignore = dirty
 [submodule "Tapasco"]
 	path = Tapasco
-	url = https://github.com/HSA-on-FPGA/Tapasco
+	url = https://github.com/esa-tu-darmstadt/tapasco
+    branch = master
+    ignore = dirty
