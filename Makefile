@@ -6,7 +6,7 @@ CURRENT_DIR := $(dir $(MKFILE_PATH))
 EMPTY :=
 SPACE := $(EMPTY) $(EMPTY)
 
-BACKEND_DIRS = LibHSA/ accelerator_backend/ image_accelerator/
+BACKEND_DIRS = LibHSA/ image_accelerator/ accelerator_backend/
 BACKEND_DIRS_HOME = $(subst $(SPACE),:,$(addprefix $(CURRENT_DIR)/, $(BACKEND_DIRS)))
 MIPS_DESIGN_DIR = mips_board_design/
 TAPASCO_DIR = $(abspath $(CURRENT_DIR)Tapasco)
